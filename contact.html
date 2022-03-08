@@ -16,6 +16,8 @@
       <a href="./index.html">
         Accueil
       </a>
+    </li>
+    <li>
       <a href="./jeux.html">
         Les jeux
       </a>
@@ -33,6 +35,22 @@
   </ul>
 </nav>
 <body>
+  <form method="POST" action="contact.php">
+    <h2>Nous contacter</h2>
+    <p>Pour nous contacter, remplissez le formulaire ci-dessous, nous vous répondrons dans les meilleurs délais</p>
+    <label for="surname">Nom</label>
+    <input id="surname" type="text" name="surname" placeholder="Votre nom">
+    <label for="name">Prénom</label>
+    <input id="name" type="text" name="name" placeholder="Votre prénom">
+    <label for="email">Adresse de messagerie</label>
+    <input id="email" type="email" name="email" placeholder="Votre email">
+    <label for="object">Objet de votre message</label>
+    <input id="object" type="text" name="object" placeholder="objet">
+    <label for="message">Votre message</label>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+    <button type="submit">Envoyer votre message</button>
+  </form>
+
   
 </body>
 <footer>
