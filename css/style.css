@@ -1,0 +1,54 @@
+.header {
+  background-color: #DAFDE5;
+
+}
+
+header{
+  color: #1352DE;
+  text-align: center;
+}
+
+.navspan{
+  font-size: 1.8rem;
+  background-color: #1352DE;
+  color: #DAFDE5;
+}
+
+.navlist{
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 1.3rem;
+}
+
+.nav-link{
+  color: #1352DE;
+}
+
+
+
+/* Pour écrans Moyens (tablettes / ordinateurs portables) */ 
+
+@media only screen and (min-width: 768px){
+  .navlist{
+    flex-direction: row;
+    font-size: 1.3rem;
+  }
+  .navspan{
+    font-size: 1.8rem;
+  }
+
+
+}
+
+
+/* Pour écrans Grands (ordinateurs fixes) */ 
+@media only screen and (min-width: 1024px){
+  .navlist{
+      font-size: 1.5rem;
+  }
+  .navspan{
+    font-size: 2rem;
+  }
+
+
+}
