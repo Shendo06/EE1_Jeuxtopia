@@ -24,6 +24,22 @@ header{
   color: #1352DE;
 }
 
+body{
+  padding: 90px;
+}
+
+.card{
+  border-color: #DAFDE5;
+}
+
+.card-img{
+  width: 200px;
+  height: 200px;
+}
+
+.card-title{
+  text-align: center;
+}
 
 
 /* Pour écrans Moyens (tablettes / ordinateurs portables) */ 
@@ -36,7 +52,10 @@ header{
   .navspan{
     font-size: 1.8rem;
   }
-
+  .card-title{
+    text-align: start;
+  }
+  
 
 }
 
