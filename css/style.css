@@ -24,9 +24,20 @@ header{
   color: #1352DE;
 }
 
-body{
-  padding: 90px;
+footer {
+  background-color: #DAFDE5;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #1352DE;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
 }
+
+.footerList{
+  list-style: none;
+}
+
 
 .card{
   border-color: #DAFDE5;
