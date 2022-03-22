@@ -37,7 +37,9 @@ footer {
 .footerList{
   list-style: none;
 }
-
+body{
+  padding-top: 90px;
+}
 
 .card{
   border-color: #DAFDE5;
