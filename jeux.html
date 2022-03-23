@@ -57,36 +57,61 @@
   </section>
 </header>  
 <body>
-  <section>
-    <h1>
-      Les jeux que nous vous proposons 
-    </h1>
-    <p>
-      De nouveaux jeux arrivent chaque semaine, la liste n'est donc pas exhaustive.
-    </p>
-  </section>
-  <section>
-    <article>
-      <a href="./quick.html">
-        <h3>Les Rapides (moins de 20 min)</h3>
-        <p>Dans cette catégorie nous trouverons les jeux d'une durée inférieure à 20 minutes.</p>
-        <p>Ces jeux rapides permettent une grande convivialité sans trop de réflexion</p>
-      </a>
-    </article>
-    <article>
-      <a href="./medium.html">
-        <h3>Les Moyens (moins de 40 min)</h3>
-        <p>Dans cette catégorie nous trouverons les jeux d'une durée de 20 à 40 minutes.</p>
-        <p>Ces jeux commencent à devenir stratègiques</p>
-      </a>
-    </article>
-    <article>
-      <a href="./long.html">
-        <h3>Les Longs (plus de 40 min)</h3>
-        <p>Cette catégorie regroupe les jeux de plus de 40 minutes</p>
-        <p>Des stragégies solo ou en équipe se mettent en place. Ces jeux demandent de l'attention et de la réflexion</p>
-      </a>
-    </article>
+  <section class="container">
+    <section>
+      <h1>
+        Les jeux que nous vous proposons 
+      </h1>
+      <p>
+        De nouveaux jeux arrivent chaque semaine, la liste n'est donc pas exhaustive.
+      </p>
+    </section>
+
+    <section class="row row-cols-1 row-cols-lg-3">
+      
+      <article class="card mb-3 gameTypeC">
+            <a href="./quick.html" class="card-body gameType">
+                <h3 class="card-title m-1">
+                  <img src="./images/TimesIcons/moins20min.png" alt="moins de 20 min" class="timeGameIcon"  >
+                  Les Rapides
+                </h3>
+              <div class="card-text m-2">
+                <p>Dans cette catégorie nous trouverons les jeux d'une durée inférieure à 20 minutes.</p>
+                <p>Ces jeux rapides permettent une grande convivialité sans trop de réflexion</p>
+              </div>
+            </a>
+      </article>
+
+
+      <article class="card mb-3 gameTypeC">
+        <a href="./medium.html" class="card-body gameType">
+          <h3 class="card-title m-1">
+            <img src="./images/TimesIcons/moins40min.png" alt="moins de 40 min" class="timeGameIcon">
+            Les Moyens 
+          </h3>
+          <div class="card-text m-2">
+            <p>Dans cette catégorie nous trouverons les jeux d'une durée de 20 à 40 minutes.</p>
+            <p>Ces jeux commencent à devenir stratègiques</p>
+          </div>
+        </a>
+      </article>
+
+
+      <article class="card mb-3 gameTypeC">
+        <a href="./long.html" class="card-body gameType">
+          <h3 class="card-title m-1">
+            <img src="./images/TimesIcons/plus40min.png" alt="plus de 40 min" class="timeGameIcon">
+            Les Longs 
+          </h3>
+          <div class="card-text m-2">
+            <p>Cette catégorie regroupe les jeux de plus de 40 minutes</p>
+            <p>Des stragégies solo ou en équipe se mettent en place. Ces jeux demandent de l'attention et de la réflexion</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
   </section>
 </body>
 
