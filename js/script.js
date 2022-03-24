@@ -10,3 +10,12 @@ const response = function () {
 
   return false;
 };
+
+const gameCards = document.querySelectorAll('article.gameCard');
+for (let gameCard of gameCards){
+  gameCard.addEventListener('click', function (){
+    gameCards.forEach(g => g.classList.remove('active'));
+    gameCard.classList.add('active');
+  });
+
+}

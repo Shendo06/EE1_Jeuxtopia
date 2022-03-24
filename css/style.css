@@ -60,10 +60,6 @@ body{
   color: black;
   }
 
-.gameTypeC:hover{
-  background-color: #DAFDE5 ;
-}
-
 .timeGameIcon{
   width: 90px;
   height: 90px;
@@ -73,6 +69,31 @@ body{
   text-align: center;
   color: #1352DE;
 }
+
+.gameIcon{
+  width: 80px;
+  height: 80px;
+}
+.gameImg{
+ justify-content: center;
+}
+
+.gameCardTitle{
+  color: #1352DE;
+  text-align: center;
+}
+
+.cardIsActive{
+  display: none;
+}
+
+.gameCard.active .cardIsActive {
+  display: block;
+}
+.gameCard.active .cardIsNotActive {
+  display: none;
+}
+
 
 
 /* Pour écrans Moyens (tablettes / ordinateurs portables) */ 
@@ -88,6 +109,18 @@ body{
   .card-title{
     text-align: start;
   }
+  .gameCardTitle{
+    text-align: center;
+  }
+  .gameTypeC:hover{
+    background-color: #DAFDE5 ;
+  }
+  .card:hover .cardIsActive{
+    display: block;
+  }
+  .card:hover .cardIsNotActive{
+    display: none;
+  }
 
 }
 
@@ -100,6 +133,5 @@ body{
   .navspan{
     font-size: 2rem;
   }
-
 
 }

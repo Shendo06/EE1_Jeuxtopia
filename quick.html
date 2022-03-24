@@ -57,68 +57,99 @@
   </section>
 </header>  
 <body>
-  <section>
+  <section class="container gameContainer">
     <h2>Vous trouverez ici une selection de nos jeux de moins de 20 minutes</h2>
-
-    <article>
-      <h4>Dobble</h4>
-      <img src="./images/Games/dobble.jpeg" alt="dobble">
-      <p>Age : 6 ans et plus</p>
-      <p>Nb de joueurs : 2 à 8</p>
-      <p>Temps de partie : 10 minutes</p>
-      <p>
-        Dobble est un jeu d’observation et de rapidité dans lequel tous les joueurs jouent en même temps.
-        55 cartes comportant chacune 8 symboles, 5 variantes… et c’est parti ! 
-        Quel que soit le jeu choisi, repérez plus vite que vos adversaires le seul et unique symbole identique 
-        entre deux cartes puis nommez-le à haute voix. Ensuite, récupérez la carte comportant le même symbole 
-        que la vôtre, défaussez votre carte ou refilez-la à un adversaire, selon les règles de la variante à 
-        laquelle vous jouez.
-        Vous pouvez jouer à tous les mini jeux dans l’ordre, dans le désordre, ou rejouer toujours au même. 
-        Le principal est de s’amuser !
-      </p>
-
-    </article>
-
-    <article>
-      <h4>Fantasy</h4>
-      <img src="./images/Games/fantasy.jpeg" alt="fantasy">
-      <p>Age : 8 ans et plus</p>
-      <p>Nb de joueurs : 2 à 4</p>
-      <p>Temps de partie : 15 minutes</p>
-      <p>
-        Fantasy est un petit jeu de cartes rapide et simple. Chaque joueur dispose de 5 cartes en main appartenant 
-        à l'un des huit peuples du jeu. Chacune de ces cartes représente l'une des différentes créatures qui peuplent 
-        la forêt et chaque peuple dispose d'un pouvoir unique. Le but du jeu est de disposer du plus grand nombre de 
-        cartes posées devant vous à la fin de la partie.
-      </p>
-    </article>
-
-    <article>
-      <h4>7 Familles</h4>
-      <img src="./images/Games/sept_familles.jpeg" alt="sept familles">
-      <p>Age : 4 ans et plus</p>
-      <p>Nb de joueurs : 2 à 4</p>
-      <p>Temps de partie : 15 minutes</p>
-      <p>
-        Un jeu de 7 familles où les joueurs tentent de reconstituer les 7 familles.
-      </p>
-    </article>
-
-    <article>
-      <h4>Qwixx</h4>
-      <img src="./images/Games/qwixx.jpeg" alt="Quixx">
-      <p>Age : 8 ans et plus</p>
-      <p>Nb de joueurs : 2 à 5</p>
-      <p>Temps de partie : 15 minutes</p>
-      <p>
-        A son tour, chaque joueur lance les dés et tout le monde peut utiliser le résultat pour cocher un chiffre d’une de ses 
-        rangées. Plus vous cochez de cases, plus vous marquez de points.
-        Mais attention, les chiffres sont classés dans un certain ordre et une fois que vous en avez passé impossible de revenir 
-        en arrière.
-      </p>
-    </article>
-
-
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 ">
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Dobble</h4>
+          <img src="./images/Games/dobble.jpeg" alt="dobble" class="card-img gameImg mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A6ans.png" alt="+6ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a8.png" alt="2 à 8 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T10min.png" alt="10 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive" >
+            <p class="m-2">
+              Age : 6 ans et plus <br/> Nb de joueurs : 2 à 8 <br/> Temps de partie : 10 minutes
+            </p>
+            <p class="m-2">
+              Dobble est un jeu d’observation et de rapidité dans lequel tous les joueurs jouent en même temps.
+              55 cartes comportant chacune 8 symboles, 5 variantes… et c’est parti ! 
+              Quel que soit le jeu choisi, repérez plus vite que vos adversaires le seul et unique symbole identique 
+              entre deux cartes puis nommez-le à haute voix. Ensuite, récupérez la carte comportant le même symbole 
+              que la vôtre, défaussez votre carte ou refilez-la à un adversaire, selon les règles de la variante à 
+              laquelle vous jouez.
+              Vous pouvez jouer à tous les mini jeux dans l’ordre, dans le désordre, ou rejouer toujours au même. 
+              Le principal est de s’amuser !
+            </p>
+          </section>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Fantasy</h4>
+          <img src="./images/Games/fantasy.jpeg" alt="fantasy" class="card-img mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A8ans.png" alt="+8ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a4png.png" alt="2 à 4 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T15min.png" alt="15 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive">
+            <p>Age : 8 ans et plus</p>
+            <p>Nb de joueurs : 2 à 4</p>
+            <p>Temps de partie : 15 minutes</p>
+            <p>
+              Fantasy est un petit jeu de cartes rapide et simple. Chaque joueur dispose de 5 cartes en main appartenant 
+              à l'un des huit peuples du jeu. Chacune de ces cartes représente l'une des différentes créatures qui peuplent 
+              la forêt et chaque peuple dispose d'un pouvoir unique. Le but du jeu est de disposer du plus grand nombre de 
+              cartes posées devant vous à la fin de la partie.
+            </p>
+          </section>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">7 Familles</h4>
+          <img src="./images/Games/sept_familles.jpeg" alt="sept familles" class="card-img mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A4ans.png" alt="+4ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a4png.png" alt="2 à 4 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T15min.png" alt="15 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive">
+            <p>Age : 4 ans et plus</p>
+            <p>Nb de joueurs : 2 à 4</p>
+            <p>Temps de partie : 15 minutes</p>
+            <p>
+              Un jeu de 7 familles où les joueurs tentent de reconstituer les 7 familles.
+            </p>
+          </section>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Qwixx</h4>
+          <img src="./images/Games/qwixx.jpeg" alt="Quixx" class="card-img mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A8ans.png" alt="+8ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a5.png" alt="2 à 5 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T15min.png" alt="15 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive">
+            <p>Age : 8 ans et plus</p>
+            <p>Nb de joueurs : 2 à 5</p>
+            <p>Temps de partie : 15 minutes</p>
+            <p>
+              A son tour, chaque joueur lance les dés et tout le monde peut utiliser le résultat pour cocher un chiffre d’une de ses 
+              rangées. Plus vous cochez de cases, plus vous marquez de points.
+              Mais attention, les chiffres sont classés dans un certain ordre et une fois que vous en avez passé impossible de revenir 
+              en arrière.
+            </p>
+          </section>
+        </article>
+      </div>
+    </div>
   </section>
 
 
@@ -135,4 +166,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
 </html>
