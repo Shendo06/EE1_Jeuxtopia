@@ -32,12 +32,12 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar nav me-auto mb-2 mb-lg-0 navlist">
               <li class="nav-item avtive">
-                <a class="nav-link" aria-current="page" href="./index.html">
+                <a class="nav-link" href="./index.html">
                   Accueil
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./jeux.html">
+                <a class="nav-link activePage" aria-current="page" href="./jeux.html">
                   Les jeux
                 </a>
               </li>
@@ -48,7 +48,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contact.html">
-                  Nous contacter
+                  Contact
                 </a>
               </li>
             </ul>
@@ -57,115 +57,179 @@
   </section>
 </header>  
 <body>
-  <section>
+  <section class="container gameContainer">
     <h2>Vous trouverez ici une selection de nos jeux de plus de 40 minutes</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 ">
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">6 qui prend</h4>
+          <img src="./images/Games/six-qui-prend.jpeg" alt="six qui prend" class="card-img gameImg mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A10ans.png" alt="+10ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a10.png" alt="2 à 10 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T45min.png" alt="45 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive" >
+            <p class="m-2">
+              Age : 10 ans et plus <br/> Nb de joueurs : 2 à 10 <br/> Temps de partie : 45 minutes
+            </p>
+            <p class="m-2">
+              Ces drôles de cartes valent de 1 à 7 «têtes de boeufs» chacune. Votre but : en récolter le moins possible. 
+              En début de manche vous recevez 10 cartes.
+              A chaque tour, les joueurs choisissent une carte et la révèlent à tous en même temps : ces cartes sont ajoutées 
+              à l’une des 4 séries qui se forment sur la table. Celui qui doit jouer la sixième carte d’une série «récolte» 
+              les 5 premières... et toutes leurs têtes de boeufs !
+              Quand les 10 cartes sont jouées, chacun compte ses boeufs et les additionne à son total précédent.
+              Après plusieurs manches, le plus petit troupeau gagnera la partie.
+            </p>
+          </section>
+        </article>
+      </div>  
 
-    <article>
-      <h4>6 qui prend</h4>
-      <img src="./images/Games/six-qui-prend.jpeg" alt="six qui prend">
-      <p>Age : 10 ans et plus</p>
-      <p>Nb de joueurs : 2 à 10</p>
-      <p>Temps de partie : 45 minutes</p>
-      <p>
-        Ces drôles de cartes valent de 1 à 7 «têtes de boeufs» chacune. Votre but : en récolter le moins possible. 
-        En début de manche vous recevez 10 cartes.
-        A chaque tour, les joueurs choisissent une carte et la révèlent à tous en même temps : ces cartes sont ajoutées 
-        à l’une des 4 séries qui se forment sur la table. Celui qui doit jouer la sixième carte d’une série «récolte» 
-        les 5 premières... et toutes leurs têtes de boeufs !
-        Quand les 10 cartes sont jouées, chacun compte ses boeufs et les additionne à son total précédent.
-        Après plusieurs manches, le plus petit troupeau gagnera la partie.
-      </p>
-    </article>
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Service compris !</h4>
+          <img src="./images/Games/service_compris.jpeg" alt="servie compris" class="card-img gameImg mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A10ans.png" alt="+10ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a6.png" alt="2 à 6 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T45min.png" alt="45 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive" >
+            <p class="m-2">
+              Age : 10 ans et plus <br/> Nb de joueurs : 2 à 6 <br/> Temps de partie : 45 minutes
+            </p>
+            <p class="m-2">
+              Chaque joueur dirige un peuple de petites créatures chétives mais appétissantes. Le plateau de jeu représente la 
+              table à manger de l'insatiable géant, et à chaque tour, les cartes créatures qui y sont posées peuvent disparaître, 
+              avalées qu'elles sont par le goulu. Les joueurs vont essayer d'y propulser les créatures de leurs adversaires afin 
+              qu'elles soient dévorées. Le dernier joueur à posséder des créatures encore en jeu sera proclamé vainqueur.
+            </p>  
+          </section>  
+        </article>
+      </div>
 
-    <article>
-      <h4>Service compris !</h4>
-      <img src="./images/Games/service_compris.jpeg" alt="servie compris">
-      <p>Age : 10 ans et plus</p>
-      <p>Nb de joueurs : 2 à 6</p>
-      <p>Temps de partie : 45 minutes</p>
-      <p>
-        Chaque joueur dirige un peuple de petites créatures chétives mais appétissantes. Le plateau de jeu représente la 
-        table à manger de l'insatiable géant, et à chaque tour, les cartes créatures qui y sont posées peuvent disparaître, 
-        avalées qu'elles sont par le goulu. Les joueurs vont essayer d'y propulser les créatures de leurs adversaires afin 
-        qu'elles soient dévorées. Le dernier joueur à posséder des créatures encore en jeu sera proclamé vainqueur.
-      </p>  
-    </article>
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Chasseurs de légendes</h4>
+          <img src="./images/Games/chasseurs_de_legendes.jpeg" alt="chasseurs de legendes" class="card-img gameImg mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A10ans.png" alt="+10ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a5.png" alt="2 à 5 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T45min.png" alt="45 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive">
+            <p class="m-2">
+              Age : 10 ans et plus <br/> Nb de joueurs : 2 à 5 <br/> Temps de partie : 45 minutes
+            </p>
+            <p class="m-2">
+              Les terres et le peuple des Perles, engouffrés dans l’obscurité par un sombre magicien vivent dans l‘attente qu‘un 
+              héros viennent les libérer !
+              Dans Chasseurs de légendes, à chaque tour, vous devrez choisir judicieusement vos actions parmi les quatre qui vous 
+              sont proposées.
+              Pour gagner un Personnage, vous devez jouer une combinaison spécifique de cartes de votre main.
+              Les personnages vous rapportent des points de victoire ou de précieux avantages.
+              Faites les bons choix et échangez vos cartes au bon moment pour acquérir de fantastiques et puissants personnages qui 
+              vous amèneront à la victoire !
+            </p>  
+          </section>  
+        </article>
+      </div>
+      
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Town</h4>
+          <img src="./images/Games/town.jpeg" alt="town" class="card-img gameImg mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A10ans.png" alt="+10ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a4.png" alt="2 à 4 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T45min.png" alt="45 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive">
+            <p class="m-2">
+              Age : 10 ans et plus<br/> Nb de joueurs : 2 à 4 <br/> Temps de partie : 45 minutes
+            </p>
+            <p class="m-2">
+              Little Town est un jeu de stratégie et de placement d’ouvriers accessible et malin, destiné à être joué en famille et 
+              entre amis. Simple à prendre en main, sa profondeur permet à chacun de développer rapidement son propre style de jeu.
+            </p>  
+          </section>
+        </article>
+      </div>
+      
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Mysterium</h4>
+          <img src="./images/Games/mysterium.jpeg" alt="mysteriem" class="card-img gameImg mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A10ans.png" alt="+10ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a7.png" alt="2 à 7 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T45min.png" alt="45 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive">
+            <p class="m-2">
+              Age : 10 ans et plus<br/> Nb de joueurs : 2 à 7<br/> Temps de partie : 45 minutes
+            </p>
+            <p class="m-2">
+              Mysterium est un jeu d’enquête coopératif dans lequel tout le monde perd ou tout le monde gagne. Tous les joueurs sont 
+              unis dans un même but : découvrir la vérité sur la mort du fantôme qui hante le manoir et lui apporter la paix !
+            </p>  
+          </section>  
+        </article>
+      </div>
+      
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Nidavellir</h4>
+          <img src="./images/Games/nidavellir.jpeg" alt="nidavellir" class="card-img gameImg mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A10ans.png" alt="+10ans" class="gameIcon">
+            <img src="./images/GamesIcons/J2a5.png" alt="2 à 5 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T45min.png" alt="45 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive">
+            <p class="m-2">
+              Age : 10 ans et plus<br/> Nb de joueurs : 2 à 5<br/> Temps de partie : 45 minutes
+            </p>
+            <p class="m-2">
+              Nidavellir, le Royaume des Nains et des Naines, est menacé par le dragon Fafnir. En tant que vénérable Elvaland, vous avez 
+              été mandaté(e)s par le Roi. Sillonnez chaque taverne du royaume, engagez les nain·e·s les plus habiles, recrutez les 
+              héro(ïne)s les plus prestigieux(euses) et constituez le bataillon le plus à même de vaincre votre ennemi mortel ! A chaque 
+              tour, misez une pièce sur chaque taverne. Dans le sens décroissant, choisissez un personnage et intégrez le à votre armée. 
+              Chaque Classe de Nain(e)s possède une façon de « scorer » qui lui est propre : Forgeron(ne), Chasseur(euse), Guerrier(ère), 
+              Explorateur(rice) et Mineur(euse). Un recrutement méticuleux vous permettra d’attirer un(e) puissant(e) Héros(ine) dans 
+              votre armée. Vous aurez également la possibilité d’augmenter la valeur de vos pièces d’Or via un ingénieux système de « Coin 
+              Building », et donc de prendre le meilleur sur les autres Elvalands.
+            </p>  
+          </section>  
+        </article>
+      </div>
+      
+      <div class="col">
+        <article class="card gameCard">
+          <h4 class="card-title gameCardTitle">Concept</h4>
+          <img src="./images/Games/concept.jpeg" alt="concept" class="card-img gameImg mx-auto mb-3">
+          <section class="gameIcons m-3 cardIsNotActive mx-auto"  >
+            <img src="./images/GamesIcons/A10ans.png" alt="+10ans" class="gameIcon">
+            <img src="./images/GamesIcons/J4a12.png" alt="4 à 12 joueurs" class="gameIcon">
+            <img src="./images/GamesIcons/T40min.png" alt="40 min" class="gameIcon">
+          </section>
+          <section class="card-text cardIsActive">
+            <p class="m-2">
+              Age : 10 ans et plus<br/> Nb de joueurs : 4 à 12<br/> Temps de partie : 40 minutes
+            </p>
+            <p class="m-2">
+              Par équipes, faites deviner des mots aux autres joueurs en plaçant des pions sur différentes icônes du plateau.
+              Grâce aux nombreuses icônes et aux possibilités offertes par leurs interactions, il existe plusieurs façons de 
+              faire deviner chaque mot... mais ce ne sont pas les concepts les plus simples qui sont les plus faciles à faire deviner.
+              A chaque fois, le joueur qui trouve le mot et l’équipe qui l’a fait deviner remportent des points de victoire. 
+              Pour gagner, il faut cumuler le plus de points en fin de partie.
+            </p>  
+          </section>  
+        </article>
+      </div>
 
-    <article>
-      <h4>Chasseurs de légendes</h4>
-      <img src="./images/Games/chasseurs_de_legendes.jpeg" alt="chasseurs de legendes">
-      <p>Age : 10 ans et plus</p>
-      <p>Nb de joueurs : 2 à 5</p>
-      <p>Temps de partie : 45 minutes</p>
-      <p>
-        Les terres et le peuple des Perles, engouffrés dans l’obscurité par un sombre magicien vivent dans l‘attente qu‘un 
-        héros viennent les libérer !
-        Dans Chasseurs de légendes, à chaque tour, vous devrez choisir judicieusement vos actions parmi les quatre qui vous 
-        sont proposées.
-        Pour gagner un Personnage, vous devez jouer une combinaison spécifique de cartes de votre main.
-        Les personnages vous rapportent des points de victoire ou de précieux avantages.
-        Faites les bons choix et échangez vos cartes au bon moment pour acquérir de fantastiques et puissants personnages qui 
-        vous amèneront à la victoire !
-      </p>  
-    </article>
-
-    <article>
-      <h4>Town</h4>
-      <img src="./images/Games/town.jpeg" alt="town">
-      <p>Age : 10 ans et plus</p>
-      <p>Nb de joueurs : 2 à 4</p>
-      <p>Temps de partie : 45 minutes</p>
-      <p>
-        Little Town est un jeu de stratégie et de placement d’ouvriers accessible et malin, destiné à être joué en famille et 
-        entre amis. Simple à prendre en main, sa profondeur permet à chacun de développer rapidement son propre style de jeu.
-      </p>  
-    </article>
-
-    <article>
-      <h4>Mysterium</h4>
-      <img src="./images/Games/mysterium.jpeg" alt="mysteriem">
-      <p>Age : 10 ans et plus</p>
-      <p>Nb de joueurs : 2 à 7</p>
-      <p>Temps de partie : 45 minutes</p>
-      <p>
-        Mysterium est un jeu d’enquête coopératif dans lequel tout le monde perd ou tout le monde gagne. Tous les joueurs sont 
-        unis dans un même but : découvrir la vérité sur la mort du fantôme qui hante le manoir et lui apporter la paix !
-      </p>  
-    </article>
-
-    <article>
-      <h4>Nidavellir</h4>
-      <img src="./images/Games/nidavellir.jpeg" alt="nidavellir">
-      <p>Age : 10 ans et plus</p>
-      <p>Nb de joueurs : 2 à 5</p>
-      <p>Temps de partie : 45 minutes</p>
-      <p>
-        Nidavellir, le Royaume des Nains et des Naines, est menacé par le dragon Fafnir. En tant que vénérable Elvaland, vous avez 
-        été mandaté(e)s par le Roi. Sillonnez chaque taverne du royaume, engagez les nain·e·s les plus habiles, recrutez les 
-        héro(ïne)s les plus prestigieux(euses) et constituez le bataillon le plus à même de vaincre votre ennemi mortel ! A chaque 
-        tour, misez une pièce sur chaque taverne. Dans le sens décroissant, choisissez un personnage et intégrez le à votre armée. 
-        Chaque Classe de Nain(e)s possède une façon de « scorer » qui lui est propre : Forgeron(ne), Chasseur(euse), Guerrier(ère), 
-        Explorateur(rice) et Mineur(euse). Un recrutement méticuleux vous permettra d’attirer un(e) puissant(e) Héros(ine) dans 
-        votre armée. Vous aurez également la possibilité d’augmenter la valeur de vos pièces d’Or via un ingénieux système de « Coin 
-        Building », et donc de prendre le meilleur sur les autres Elvalands.
-      </p>  
-    </article>
-
-    <article>
-      <h4>Concept</h4>
-      <img src="./images/Games/concept.jpeg" alt="concept">
-      <p>Age : 10 ans et plus</p>
-      <p>Nb de joueurs : 4 à 12</p>
-      <p>Temps de partie : 40 minutes</p>
-      <p>
-        Par équipes, faites deviner des mots aux autres joueurs en plaçant des pions sur différentes icônes du plateau.
-        Grâce aux nombreuses icônes et aux possibilités offertes par leurs interactions, il existe plusieurs façons de 
-        faire deviner chaque mot... mais ce ne sont pas les concepts les plus simples qui sont les plus faciles à faire deviner.
-        A chaque fois, le joueur qui trouve le mot et l’équipe qui l’a fait deviner remportent des points de victoire. 
-        Pour gagner, il faut cumuler le plus de points en fin de partie.
-      </p>  
-    </article>
-
+    </div>    
   </section>
 
 </body>
@@ -181,4 +245,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
 </html>

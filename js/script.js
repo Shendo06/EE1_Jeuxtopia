@@ -14,8 +14,14 @@ const response = function () {
 const gameCards = document.querySelectorAll('article.gameCard');
 for (let gameCard of gameCards){
   gameCard.addEventListener('click', function (){
+    let cardActive = false;
+    if (gameCard.classList.value.indexOf('active') !== -1){
+      cardActive = true;
+    }
     gameCards.forEach(g => g.classList.remove('active'));
-    gameCard.classList.add('active');
+    if (!cardActive){
+      gameCard.classList.add('active');
+    }
   });
 
 }

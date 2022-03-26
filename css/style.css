@@ -1,16 +1,16 @@
 .header {
-  background-color: #DAFDE5;
-
+  background: rgb(218,253,229);
+  background: linear-gradient(40deg, rgba(218,253,229,1) 30%, rgba(69,150,141,1) 90%, rgba(69,150,141,1) 100%);
 }
 
 header{
-  color: #1352DE;
+  color: #45968D;
   text-align: center;
 }
 
 .navspan{
   font-size: 1.8rem;
-  background-color: #1352DE;
+  background-color: #45968D;
   color: #DAFDE5;
 }
 
@@ -21,14 +21,21 @@ header{
 }
 
 .nav-link{
-  color: #1352DE;
+  color:  #DAFDE5;
+}
+.activePage{
+  color: #FCE4C0;
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
+
 footer {
-  background-color: #DAFDE5;
+  background: rgb(218,253,229);
+  background: linear-gradient(40deg, rgba(69,150,141,1) 30%, rgba(218,253,229,1) 90%, rgba(218,253,229,1) 100%);
   font-size: 0.8rem;
   text-align: center;
-  color: #1352DE;
+  color:black;
   width: 100%;
   padding-right: 0;
   padding-left: 0;
@@ -44,6 +51,7 @@ body{
 
 .card{
   border-color: #DAFDE5;
+  height: 100%;
 }
 
 .card-img{
@@ -67,7 +75,7 @@ body{
 
 .lunelJoue{
   text-align: center;
-  color: #1352DE;
+  color: #45968D;
 }
 
 .gameIcon{
@@ -79,8 +87,10 @@ body{
 }
 
 .gameCardTitle{
-  color: #1352DE;
+  color: #45968D;
   text-align: center;
+  padding: 3px 0;
+  background-color: #DAFDE5;
 }
 
 .cardIsActive{
@@ -103,6 +113,20 @@ body{
     flex-direction: row;
     font-size: 1.3rem;
   }
+  .nav-link{
+    color:  #45968D;
+  }
+  .nav-link:hover{
+    color: #FCE4C0;
+  }
+  .activePage{
+    border: solid;
+    border-radius: 50%;
+    background-color: #45968D;
+    color: #DAFDE5 ;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
   .navspan{
     font-size: 1.8rem;
   }
@@ -117,6 +141,7 @@ body{
   }
   .card:hover .cardIsActive{
     display: block;
+    background-color: #DAFDE5 ;
   }
   .card:hover .cardIsNotActive{
     display: none;
