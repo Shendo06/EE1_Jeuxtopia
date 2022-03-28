@@ -104,6 +104,13 @@ body{
   display: none;
 }
 
+.formSpan {
+  color: #45968D;
+}
+
+.btn-primary {
+  background-color: #45968D;
+}
 
 
 /* Pour écrans Moyens (tablettes / ordinateurs portables) */ 
