@@ -45,8 +45,16 @@ footer {
 .footerList{
   list-style: none;
 }
+
 body{
   padding-top: 90px;
+}
+
+.horaires-liste {
+  list-style-type: none;
+}
+.horaires:before {
+  content: '- ';
 }
 
 .card{
@@ -91,8 +99,12 @@ body{
   text-align: center;
   padding: 3px 0;
   background-color: #DAFDE5;
+  font-size: 1.5em;
 }
 
+.card-game-description{
+  text-align: justify;
+}
 .cardIsActive{
   display: none;
 }
@@ -104,7 +116,42 @@ body{
   display: none;
 }
 
+.eventdate{
+  font-size: 1.8em;
+}
+.contactSpan{
+  color: #45968D;
+}
 
+.btn-contactForm{
+  background-color: #DAFDE5;
+  border: solid 1px #45968D;
+  color: #45968D;
+}
+
+input + span {
+  position: relative;
+}
+
+input:invalid + span::before {
+  content: '✖';
+  color: red;
+}
+
+input:valid + span::before {
+  content: '✓';
+  color: green;
+}
+
+.sitemap-link{
+  text-decoration: none;
+  color: #45968D;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
 
 /* Pour écrans Moyens (tablettes / ordinateurs portables) */ 
 
@@ -145,6 +192,14 @@ body{
   }
   .card:hover .cardIsNotActive{
     display: none;
+  }
+  .btn-contactForm:hover{
+    background-color: #45968D;
+    color:#FCE4C0;
+  }
+  .sitemap-container{
+    border: solid 1px #DAFDE5;
+    border-radius: 20px;
   }
 
 }
