@@ -1,25 +1,23 @@
+/*Style du header*/
 .header {
   background: rgb(218,253,229);
   background: linear-gradient(40deg, rgba(218,253,229,1) 30%, rgba(69,150,141,1) 90%, rgba(69,150,141,1) 100%);
 }
-
 header{
   color: #45968D;
   text-align: center;
 }
-
+/*Style de la barre de navigation*/
 .navspan{
   font-size: 1.8rem;
   background-color: #45968D;
   color: #DAFDE5;
 }
-
 .navlist{
   flex-direction: column;
   align-items: flex-end;
   font-size: 1.3rem;
 }
-
 .nav-link{
   color:  #DAFDE5;
 }
@@ -28,8 +26,7 @@ header{
   font-style: italic;
   font-size: 1.5rem;
 }
-
-
+/*Style du pied de page*/
 footer {
   background: rgb(218,253,229);
   background: linear-gradient(40deg, rgba(69,150,141,1) 30%, rgba(218,253,229,1) 90%, rgba(218,253,229,1) 100%);
@@ -41,43 +38,54 @@ footer {
   padding-left: 0;
   margin-top: 5px;
 }
-
 .footerList{
   list-style: none;
 }
+footer a {
+  text-decoration: none;
+  color: black;
+}
+/*Style général*/
 body{
   padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
+body > section {
+  flex-grow: 1;
+}
+h1{
+  text-align: center;
+  color: #45968D;
+}
+/*Style de la page d'accueil*/
+.horaires-liste {
+  list-style-type: none;
+}
+.horaires:before {
+  content: '- ';
+}
 .card{
   border-color: #DAFDE5;
   height: 100%;
 }
-
 .card-img{
   width: 200px;
   height: 200px;
 }
-
 .card-title{
   text-align: center;
 }
-
+/*Style des pages jeux*/
 .gameType{
   text-decoration: none;
   color: black;
   }
-
 .timeGameIcon{
   width: 90px;
   height: 90px;
 }
-
-.lunelJoue{
-  text-align: center;
-  color: #45968D;
-}
-
 .gameIcon{
   width: 80px;
   height: 80px;
@@ -91,8 +99,12 @@ body{
   text-align: center;
   padding: 3px 0;
   background-color: #DAFDE5;
+  font-size: 1.5em;
 }
 
+.card-game-description{
+  text-align: justify;
+}
 .cardIsActive{
   display: none;
 }
@@ -104,17 +116,72 @@ body{
   display: none;
 }
 
-.formSpan {
+/*Style de la page evenement*/
+.lunelJoue{
+  text-align: center;
+  color: #45968D;
+}
+.eventdate{
+  font-size: 1.8em;
+}
+/*Style de la page contact*/
+.contactSpan{
+  color: #45968D;
+}
+.btn-contactForm{
+  background-color: #DAFDE5;
+  border: solid 1px #45968D;
+  color: #45968D;
+}
+input:invalid + span::before {
+  content: '✖';
+  color: red;
+}
+input:valid + span::before {
+  content: '✓';
+  color: green;
+}
+textarea + span {
+  position: relative;
+}
+textarea:invalid + span::before {
+  content: '✖';
+  color: red;
+}
+textarea:valid + span::before {
+  content: '✓';
+  color: green;
+}
+.inputwrap{
+  position: relative;
+}
+.formcheck{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.375em 0;
+}
+.requis{
+  font-size: 0.8em;
+}
+#errormsg{
+  color:darkred;
+  border: solid 1px darkred;
+  text-align: center;
+  border-radius: 5px;
+  padding: .375em .75em;
+  display: none;
+}
+#errormsg.show{
+  display: block;
+}
+/*Style de la page sitemap*/
+.sitemap-link{
+  text-decoration: none;
   color: #45968D;
 }
 
-.btn-primary {
-  background-color: #45968D;
-}
-
-
 /* Pour écrans Moyens (tablettes / ordinateurs portables) */ 
-
 @media only screen and (min-width: 768px){
   .navlist{
     flex-direction: row;
@@ -128,7 +195,7 @@ body{
   }
   .activePage{
     border: solid;
-    border-radius: 50%;
+    border-radius: 10px;
     background-color: #45968D;
     color: #DAFDE5 ;
     font-style: italic;
@@ -137,11 +204,15 @@ body{
   .navspan{
     font-size: 1.8rem;
   }
-  .card-title{
-    text-align: start;
+  .card-head {
+    display: flex;
+    align-items: center;
   }
   .gameCardTitle{
     text-align: center;
+  }
+  .card-text {
+    text-align: justify;
   }
   .gameTypeC:hover{
     background-color: #DAFDE5 ;
@@ -153,9 +224,16 @@ body{
   .card:hover .cardIsNotActive{
     display: none;
   }
+  .btn-contactForm:hover{
+    background-color: #45968D;
+    color:#FCE4C0;
+  }
+  .sitemap-container{
+    border: solid 1px #DAFDE5;
+    border-radius: 20px;
+  }
 
 }
-
 
 /* Pour écrans Grands (ordinateurs fixes) */ 
 @media only screen and (min-width: 1024px){
@@ -165,5 +243,8 @@ body{
   .navspan{
     font-size: 2rem;
   }
-
+  .card-title:not(.gameCardTitle){
+    text-align: start;
+    font-size: 1.8em;
+  }
 }
